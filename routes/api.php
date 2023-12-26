@@ -6,4 +6,4 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/users',[UserController::class, 'index']);
-Route::get('/users',[AddressController::class, 'index']);
+Route::get('/address',[AddressController::class, 'index']);
