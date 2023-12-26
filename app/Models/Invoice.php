@@ -17,6 +17,11 @@ class Invoice extends Model
         'user_id'
     ];
 
+    protected $hidden = [
+        'user_id',
+        'address_id'
+    ];
+
     public function address(){
         return $this->hasOne(Address::class,'id','address_id');
     }
