@@ -16,7 +16,7 @@ class InvoiceController extends Controller
     public function findOne(Request $r){
         $response = Invoice::find($r->id);
 
-        return $response;
+        return $response->user;
     }
 
     public function post(Request $r){
