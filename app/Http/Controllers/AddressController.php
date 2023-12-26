@@ -12,4 +12,9 @@ class AddressController extends Controller
         $addresses = ModelsAddress::all();
         return $addresses;
     }
+
+    public function findOne(Request $r){
+        $user = ModelsAddress::find($r->id);
+        return $user;
+    }
 }
