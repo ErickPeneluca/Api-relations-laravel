@@ -17,4 +17,11 @@ class AddressController extends Controller
         $user = ModelsAddress::find($r->id);
         return $user;
     }
+
+    public function post(Request $r) {
+        $rawData = $r->only(['address']);
+        $post = ModelsAddress::create($rawData);
+
+        return $post;
+    }
 }

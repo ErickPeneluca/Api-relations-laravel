@@ -16,4 +16,10 @@ class UserController extends Controller
         $user = User::find($r->id);
         return $user;
     }
+
+    public function post(Request $r) {
+        $rawData = $r->only(['name','email','password']);
+        $user = User::create($rawData);
+        return $user;
+    }
 }
