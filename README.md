@@ -28,7 +28,10 @@ Para instalar e executar este projeto, siga estas etapas:
 
 ## Uso
 
-Para usar a API, você pode enviar solicitações HTTP para os endpoints definidos nas rotas da API.
+Para usar a API, você pode enviar solicitações HTTP para os endpoints definidos nas rotas da API. Ou pode importar o arquivo do insomnia com todos endpoints definidos.
+
+
+
 
 ## Contribuição
 
