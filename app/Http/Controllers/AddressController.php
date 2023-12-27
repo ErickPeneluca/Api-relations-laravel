@@ -14,8 +14,10 @@ class AddressController extends Controller
     }
 
     public function findOne(Request $r){
-        $user = ModelsAddress::find($r->id);
-        return $user;
+        $response = ModelsAddress::find($r->id);
+        $response['user'] = $response->user;
+
+        return $response;
     }
 
     public function post(Request $r) {
